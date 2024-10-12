@@ -59,3 +59,180 @@
     position: absolute;
     bottom: 0;
 }
+
+
+.chatRoom {
+    background-color: white; /* Soft Blue */ /* Light background for the chat room */
+    border: 1px solid #ccc; /* Border around the chat room */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the chat room */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-height: 500px; /* Max height for overflow */
+    display: flex; /* Flex container to manage layout */
+    flex-direction: column; /* Stack children vertically */
+}
+
+
+.chattingDisplay {
+    flex: 1; /* Allow chatting display to take available space */
+    overflow-y: auto; /* Enable scrolling for messages */
+    margin-bottom: 10px; /* Space below the messages */
+}
+
+.chattingArea {
+    display: flex; /* Flex container for input field and button */
+    margin-top: auto; /* Push the area to the bottom */
+    border-radius: 50%;
+    height: 60px;
+}
+
+
+.InputField {
+    flex: 1; /* Allow the input field to take up available space */
+    padding: 5px; /* Padding for better appearance */
+    border-radius: 100px; /* Rounded corners */
+    background-color: rgb(47, 84, 47); /* Dark background color */
+    color: white; /* Text color */
+    border: none; /* Remove the border */
+    box-shadow: none; /* Remove any box shadow */
+    
+}
+
+/* Remove the outline on focus */
+.InputField .MuiOutlinedInput-notchedOutline {
+    border: none; /* Remove the default outline */
+}
+
+/* Placeholder styles */
+.InputField::placeholder {
+    color: white; /* Placeholder text color */
+    opacity: 0.7; /* Optional: to make it a bit translucent */
+}
+
+/* Specific styles for the input component */
+.notchedOutline {
+    border: none; /* Ensure there's no outline */
+}
+
+/* Focus styles */
+.inputField:focus {
+    outline: none; /* Remove the focus outline */
+}
+
+
+.sendButton {
+    background-color: #007bff; /* Primary color for the button */
+    color: white; /* White text for the button */
+    border-radius: 20px;
+    
+    &:hover {
+        background-color: #0056b3; /* Darker color on hover */
+    }
+    
+}
+.sendButton {
+    background-color: #007bff; /* WhatsApp-like blue color */
+    color: white; /* Text color */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for better appearance */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    cursor: pointer; /* Pointer cursor on hover */
+    height: 55px;
+}
+
+/* Hover effect */
+.sendButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Focus effect */
+.sendButton:focus {
+    outline: none; /* Remove focus outline */
+}
+
+
+.messageContainer {
+    margin-bottom: 10px; /* Space between messages */
+    background-color: #e7f3fe; /* Light blue background for messages */
+    border-radius: 5px; /* Rounded corners for messages */
+    padding: 10px; /* Padding inside message containers */
+}
+
+.senderName {
+    font-weight: bold; /* Make the sender's name bold */
+    color: white; /* A nice blue color for the sender's name */
+    margin-bottom: 5px; /* Space between sender name and message text */
+    font-size: 14px; /* Adjust the font size as needed */
+    background-color: green; /* Light green background like WhatsApp */
+    padding: 5px 10px; /* Padding around the sender's name */
+    border-radius: 10px; /* Rounded corners for the sender's name bubble */
+    display: inline-block; /* Ensure the background wraps tightly around the text */
+}
+
+.messageText {
+    margin: 5px 0; /* Margin for spacing */
+    color: #333; /* Dark text for the message */
+    background-color: #f0f0f0; /* Light gray background for the message */
+    padding: 5px 10px; /* Padding around the message text */
+    border-radius: 10px; /* Rounded corners for the message bubble */
+}
+
+.noMessages {
+    color: #999; /* Grey color for no messages */
+    text-align: center; /* Center text */
+}
+.chatHeader{
+    color: blue;
+}
+
+
+
+/* lobby style  */
+
+.lobbyContainer {
+    background-color: #f0f4f8; /* Light gray background for the lobby */
+    padding: 30px; /* Add padding around the lobby content */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+.lobbyContent {
+    text-align: center; /* Center text inside the content */
+    max-width: 400px; /* Maximum width for the lobby content */
+    width: 100%; /* Full width within the max */
+    margin-top: 20px; /* Add margin to separate from the heading */
+}
+
+.heading {
+    color: #2172c9; /* Heading color similar to WhatsApp */
+    margin-bottom: 20px; /* Space between heading and content */
+    font-size: 24px; /* Larger font size for the heading */
+}
+
+.inputField {
+    margin: 10px 0; /* Space between input field and other elements */
+}
+
+.connectButton {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border-radius: 20px; /* Rounded corners for the button */
+    margin-top: 10px; /* Margin above the button */
+}
+
+/* Optional: Style for the video element */
+.videoElement {
+    width: 100%; /* Full width */
+    height: a100px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the video */
+}
+
+.heading{
+    padding-bottom: 20px;
+    margin: 50px;
+    background-color: blue;
+}

@@ -94,3 +94,108 @@
   height: auto;
   border-radius: 20px;
 }
+
+/* HomeComponent.css */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f4f8; /* Light background for contrast */
+  font-family: 'Roboto', sans-serif; /* Set a nice font for better readability */
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #ffffff; /* White background for navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+.leftPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+}
+
+.rightPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.logo-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow to the logo */
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .navBar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  .join-container {
+      flex-direction: column; /* Stack the input and button on smaller screens */
+  }
+  
+  .logo-image {
+      width: 80%; /* Responsive logo size */
+  }
+}
+.chatRoom {
+  background-color: #f9f9f9; /* Light background for the chat room */
+  border: 1px solid #ccc; /* Border around the chat room */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the chat room */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-height: 400px; /* Max height for overflow */
+  overflow-y: auto; /* Enable scrolling if messages exceed max height */
+}
+
+.chatHeader {
+  font-size: 24px; /* Larger font for the header */
+  color: #333; /* Dark color for the text */
+  margin-bottom: 15px; /* Space below the header */
+}
+
+.chattingDisplay {
+  display: flex;
+  flex-direction: column; /* Stack messages vertically */
+}
+
+.messageContainer {
+  margin-bottom: 20px; /* Space between messages */
+  background-color: #e7f3fe; /* Light blue background for messages */
+  border-radius: 5px; /* Rounded corners for messages */
+  padding: 10px; /* Padding inside message containers */
+}
+
+.senderName {
+  font-weight: bold; /* Bold sender's name */
+  color: #0056b3; /* Dark blue color for sender's name */
+}
+
+.messageText {
+  margin: 5px 0; /* Margin for spacing */
+  color: #333; /* Dark text for the message */
+  border-radius: 20px;
+}
+
+.noMessages {
+  color: #999; /* Grey color for no messages */
+  text-align: center; /* Center text */
+}
