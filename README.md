@@ -33,7 +33,7 @@ A full-stack Zoom-like video conferencing web app built using the MERN Stack (Mo
 
 ### 1. Clone the Repository
 
-git clone https://github.com/your-username/mern-zoom-clone.git
+git clone (https://github.com/gaurav-opensource/Zoom-meeting-app)
 cd mern-zoom-clone
 cd server
 npm install
